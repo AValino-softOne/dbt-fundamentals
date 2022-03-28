@@ -5,7 +5,7 @@ with customers as (
         first_name,
         last_name
 
-    from `ip-trabajo-avalino.dbt_avalino.customers`
+    from {{ source('jaffle_shop', 'customers') }}
 
 )
 

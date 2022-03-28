@@ -1,0 +1,10 @@
+
+version: 2
+
+sources:
+  - name: jaffle_shop
+    schema: dbt_avalino
+    database: ip-trabajo-avalino
+    tables: 
+      - name: customers
+      - name: orders

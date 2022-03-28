@@ -2,18 +2,23 @@ version: 2
 
 sources:
   - name: jaffle_shop
+    description: A clone of public bigquery database
     schema: dbt_avalino
     database: ip-trabajo-avalino
     tables: 
        - name: customers
+         description: Raw customers data
          columns: 
           - name: id
+            description: Primary key for customers data
             tests:
              - unique
              - not_null
        - name: orders
+         description: Raw orders data
          columns:
           - name: id
+            description: Primary key for orders data
             tests:
             - unique
             - not_null

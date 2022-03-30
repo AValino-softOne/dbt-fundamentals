@@ -1,0 +1,28 @@
+proof:
+  outputs:
+    dev:
+      dataset: dbt_avalino # your dataset for development 
+      fixed_retries: 1
+      location: US
+      method: service-account
+      priority: interactive
+      project: ip-trabajo-avalino 
+      keyfile: /secrets/dbt-service-keyfile
+      threads: 1
+      timeout_seconds: 300
+      type: bigquery
+  target: dev
+
+      prod:
+      dataset: dbt_avalino # your dataset for production
+      fixed_retries: 1
+      location: US
+      method: service-account
+      priority: interactive
+      project: ip-trabajo-avalino 
+      keyfile: /secrets/dbt-service-keyfile
+      threads: 1
+      timeout_seconds: 300
+      type: bigquery
+  target: dev
+  

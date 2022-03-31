@@ -11,9 +11,9 @@ proof:
       threads: 1
       timeout_seconds: 300
       type: bigquery
-  target: dev
+    target: dev
 
-      prod:
+    prod:
       dataset: dbt_avalino # your dataset for production
       fixed_retries: 1
       location: US
@@ -24,5 +24,5 @@ proof:
       threads: 1
       timeout_seconds: 300
       type: bigquery
-  target: dev
+    target: dev
   

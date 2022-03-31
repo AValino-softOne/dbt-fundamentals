@@ -16,7 +16,7 @@ proof:
     prod:
       dataset: dbt_avalino # your dataset for production
       fixed_retries: 1
-      location: US
+      location: US      
       method: service-account
       priority: interactive
       project: ip-trabajo-avalino 
